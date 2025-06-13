@@ -24,34 +24,36 @@ A default input file is provided, which will automatically be used if you pass n
 
 The overall grand free energy of the system includes mixing entropy, electrostatic interactions, Yukawa interactions, nonelectrostatic wall interactions, and the chemical potential Legendre transform. The grand free energy is given by:
 
-$$\begin{aligned}
+$$
+\begin{aligned}
      \beta\Omega&={\int}d\textbf{r}\left\[\phi_+\ln{\phi_+}+\phi_-\ln{\phi_-}+(1-\phi_+-\phi_-)\ln{(1-\phi_+-\phi_-)}\right\]\\
      &+\frac{1}{8\pi\lambda_0^2}{\int}d\textbf{r}{\int}d\textbf{r}\frac{\phi(\textbf{r})\phi(\textbf{r}^\prime )}{|\textbf{r}-\textbf{r}^\prime |}\\
      &-\frac{\alpha}{8\pi\lambda_0^2}{\int}d\textbf{r}{\int}d\textbf{r}^\prime \frac{\phi(\textbf{r})\textrm{e}^{-\frac{|\textbf{r}-\textbf{r}^\prime |}{\ell_c}}\phi(\textbf{r}^\prime )}{|\textbf{r}-\textbf{r}^\prime |}\\
-     &-\int d\textbf{r}_{||} \int dz \left\[H_+(z)\phi_+(\textbf{r})+H_-(z)\phi_-(\textbf{r})\right]\ \\
+     &-\int d\textbf{r}_{||} \int dz \left\[H_+(z)\phi_+(\textbf{r})+H_-(z)\phi_-(\textbf{r})\right\]\ \\
      &-\int d\textbf{r} \left\[\mu_+ \phi_+(\textbf{r}) + \mu_- \phi_-(\textbf{r})\right\]
-\end{aligned}$$
+\end{aligned}
+$$
 
 Since the system only exhibits variation in the direction normal to the parallel plates, we can reduce the equation to a 1-dimensional problem by integrating over the in-plane coordinates. We can also replace the 2nd and 3rd lines using identity transforms typical to statistical field theory and we obtain
 
-$
+$$
 \begin{aligned}
-     \frac{\beta\Omega}{A}=&\int_{-L/2}^{L/2} dz\, \left[\phi_+\ln{\phi_+}+\phi_-\ln{\phi_-}+(1-\phi_+-\phi_-)\ln{(1-\phi_+-\phi_-)}\right]\nonumber\\
-     +&\int_{-L/2}^{L/2} dz\left\{\left[\phi+\sigma\delta\left(z+\frac{L}{2}\right)-\sigma\delta\left(z-\frac{L}{2}\right)\right]\psi-\frac{\lambda_0^2}{2}\left|\frac{\partial\psi}{\partial z}\right|^2\right\}\nonumber\\
+     \frac{\beta\Omega}{A}=&\int_{-L/2}^{L/2} dz\, \left\[\phi_+\ln{\phi_+}+\phi_-\ln{\phi_-}+(1-\phi_+-\phi_-)\ln{(1-\phi_+-\phi_-)}\right\]\nonumber\\
+     +&\int_{-L/2}^{L/2} dz\left\{\left\[\phi+\sigma\delta\left(z+\frac{L}{2}\right)-\sigma\delta\left(z-\frac{L}{2}\right)\right\]\psi-\frac{\lambda_0^2}{2}\left|\frac{\partial\psi}{\partial z}\right|^2\right\}\nonumber\\
      +&\frac{\alpha}{2\lambda_0^2}\int_{-L/2}^{L/2}dz\int_{-L/2}^{L/2} dz'\, U(z-z')\phi(z)\phi(z')\nonumber\\
-     -&\int_{-L/2}^{L/2} dz\,\left[H_+\phi_++H_-\phi_-\right]\nonumber\\
+     -&\int_{-L/2}^{L/2} dz\,\left\[H_+\phi_++H_-\phi_-\right\]\nonumber\\
      -&\int_{-L/2}^{L/2} dz\,[\mu_+\phi_++\mu_-\phi_-]
 \end{aligned}
-$
+$$
 
 where $U(z-z')=-\frac{\ell_c}{2}\textrm{e}^{-|z-z'|/\ell_c}$. Extremizing this free energy with respect to all of the fluctuating densities and fields gives the saddle-point or mean-field equations.
 
 $$
 \begin{aligned}
-    &-\lambda_0^2\frac{\partial^2\psi}{\partial z^2}=\phi+\sigma\delta\left(z+\frac{L}{2}\right)-\sigma\delta\left(z-\frac{L}{2}\right),\;\;\;-\left.\lambda_0^2\frac{\partial\psi}{\partial z}\right|_{z=\pm L/2}=\sigma\\[12pt]
-    &\frac{\partial^2Y}{\partial z^2}-\frac{Y}{\ell_c^2}=\frac{\alpha}{\lambda_0^2}\phi(z),\;\;\;\left.\frac{\partial Y}{\partial z}\right|_{z=\pm L/2}=\mp\frac{Y(\pm L/2)}{\ell_c}\\[12pt]
-    &\ln\left(\frac{\phi_+}{1-\phi_+-\phi_+}\right)+\psi+Y-H_+-\mu_+=0\\[12pt]
-    &\ln\left(\frac{\phi_-}{1-\phi_+-\phi_-}\right)-\psi-Y-H_--\mu_-=0\\[12pt]
+    &-\lambda_0^2\frac{\partial^2\psi}{\partial z^2}=\phi+\sigma\delta\left(z+\frac{L}{2}\right)-\sigma\delta\left(z-\frac{L}{2}\right),\;\;\;-\left.\lambda_0^2\frac{\partial\psi}{\partial z}\right|_{z=\pm L/2}=\sigma\\
+    &\frac{\partial^2Y}{\partial z^2}-\frac{Y}{\ell_c^2}=\frac{\alpha}{\lambda_0^2}\phi(z),\;\;\;\left.\frac{\partial Y}{\partial z}\right|_{z=\pm L/2}=\mp\frac{Y(\pm L/2)}{\ell_c}\\
+    &\ln\left(\frac{\phi_+}{1-\phi_+-\phi_+}\right)+\psi+Y-H_+-\mu_+=0\\
+    &\ln\left(\frac{\phi_-}{1-\phi_+-\phi_-}\right)-\psi-Y-H_--\mu_-=0\\
 \end{aligned}
 $$
 
@@ -65,7 +67,7 @@ which allows us to eliminate the chemical potential terms in the equations above
 
 $$
 \begin{aligned}
-    \phi_+&=\frac{\textrm{e}^{-\left(\psi+Y\right)}}{(1/\phi^B-2)\textrm{e}^{-H}+2\cosh{(\psi+Y)}}\\[12pt]
+    \phi_+&=\frac{\textrm{e}^{-\left(\psi+Y\right)}}{(1/\phi^B-2)\textrm{e}^{-H}+2\cosh{(\psi+Y)}} \\
     \phi_-&=\frac{\textrm{e}^{\psi+Y}}{(1/\phi^B-2)\textrm{e}^{-H}+2\cosh{(\psi+Y)}}
 \end{aligned}
 $$
