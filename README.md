@@ -39,7 +39,7 @@ Since the system only exhibits variation in the direction normal to the parallel
 $$
 \begin{aligned}
      \frac{\beta\Omega}{A}=&\int_{-L/2}^{L/2} dz\, [\phi_+\ln{\phi_+}+\phi_-\ln{\phi_-}+(1-\phi_+-\phi_-)\ln{(1-\phi_+-\phi_-)}]\nonumber\\
-     +&\int_{-L/2}^{L/2} dz\left{[\phi+\sigma\delta\left(z+\frac{L}{2}\right)-\sigma\delta\left(z-\frac{L}{2}\right)]\psi-\frac{\lambda_0^2}{2}\left|\frac{\partial\psi}{\partial z}\right|^2\right}\nonumber\\
+     +&\int_{-L/2}^{L/2} dz{[\phi+\sigma\delta(z+\frac{L}{2})-\sigma\delta(z-\frac{L}{2})]\psi-\frac{\lambda_0^2}{2}|\frac{\partial\psi}{\partial z}|^2}\nonumber\\
      +&\frac{\alpha}{2\lambda_0^2}\int_{-L/2}^{L/2}dz\int_{-L/2}^{L/2} dz'\, U(z-z')\phi(z)\phi(z')\nonumber\\
      -&\int_{-L/2}^{L/2} dz\,[H_+\phi_++H_-\phi_-]\nonumber\\
      -&\int_{-L/2}^{L/2} dz\,[\mu_+\phi_++\mu_-\phi_-]
@@ -50,24 +50,24 @@ where $U(z-z')=-\frac{\ell_c}{2}\textrm{e}^{-|z-z'|/\ell_c}$. Extremizing this f
 
 $$
 \begin{aligned}
-    &-\lambda_0^2\frac{\partial^2\psi}{\partial z^2}=\phi+\sigma\delta\left(z+\frac{L}{2}\right)-\sigma\delta\left(z-\frac{L}{2}\right),\;\;\;-\left.\lambda_0^2\frac{\partial\psi}{\partial z}\right|_{z=\pm L/2}=\sigma\\
-    &\frac{\partial^2Y}{\partial z^2}-\frac{Y}{\ell_c^2}=\frac{\alpha}{\lambda_0^2}\phi(z),\;\;\;\left.\frac{\partial Y}{\partial z}\right|_{z=\pm L/2}=\mp\frac{Y(\pm L/2)}{\ell_c}\\
-    &\ln\left(\frac{\phi_+}{1-\phi_+-\phi_+}\right)+\psi+Y-H_+-\mu_+=0\\
-    &\ln\left(\frac{\phi_-}{1-\phi_+-\phi_-}\right)-\psi-Y-H_--\mu_-=0\\
+    &-\lambda_0^2\frac{\partial^2\psi}{\partial z^2}=\phi+\sigma\delta(z+\frac{L}{2})-\sigma\delta(z-\frac{L}{2}),\;\;\;-.\lambda_0^2\frac{\partial\psi}{\partial z}|_{z=\pm L/2}=\sigma\\
+    &\frac{\partial^2Y}{\partial z^2}-\frac{Y}{\ell_c^2}=\frac{\alpha}{\lambda_0^2}\phi(z),\;\;\;.\frac{\partial Y}{\partial z}|_{z=\pm L/2}=\mp\frac{Y(\pm L/2)}{\ell_c}\\
+    &\ln(\frac{\phi_+}{1-\phi_+-\phi_+})+\psi+Y-H_+-\mu_+=0\\
+    &\ln(\frac{\phi_-}{1-\phi_+-\phi_-})-\psi-Y-H_--\mu_-=0\\
 \end{aligned}
 $$
 
 Since the bulk is homogeneous, we can compute the chemical potentials directly as
 
 $$
-\mu=\mu_+=\mu_-=\ln\left(\frac{\phi^B}{1-2\phi^B}\right)
+\mu=\mu_+=\mu_-=\ln(\frac{\phi^B}{1-2\phi^B})
 $$
 
 which allows us to eliminate the chemical potential terms in the equations above, and obtain simple expressions for the densities in terms of the fields (of course the fields still depend on the densities).
 
 $$
 \begin{aligned}
-    \phi_+&=\frac{\textrm{e}^{-\left(\psi+Y\right)}}{(1/\phi^B-2)\textrm{e}^{-H}+2\cosh{(\psi+Y)}} \\
+    \phi_+&=\frac{\textrm{e}^{-(\psi+Y)}}{(1/\phi^B-2)\textrm{e}^{-H}+2\cosh{(\psi+Y)}} \\
     \phi_-&=\frac{\textrm{e}^{\psi+Y}}{(1/\phi^B-2)\textrm{e}^{-H}+2\cosh{(\psi+Y)}}
 \end{aligned}
 $$
