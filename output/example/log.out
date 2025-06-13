@@ -1,0 +1,38 @@
+=======================DFT for Electrolyte System======================== 
+
+              Copyright Owners: Chris Balzer (May 2020) 
+========================================================================= 
+
+=============== 
+INITIALIZATION 
+=============== 
+Data read from input file   : .//input.dat 
+Writing output to directory : /home/svarner/RTILSC/ILFT/output/example/ 
+    Separation     		  : 10 
+    Ion Bulk Vol Frac	      : 0.4 
+    Valence  (Pos : Neg)    : 1 : -1 
+    Diameter (Pos : Neg)    : 1 : 1 
+    Iteration type/var      : 2 
+    Starting iter value     : 0 
+    Ending iter value       : 0 
+    Number of steps         : 0 
+    Length Unit             : 1e-09 
+    Grid Sizing             : 0.02 
+    Temperature (K)         : 300 
+    Dielectric Constant     : 10 
+    Alpha                   : 0.8 
+    Ell_0                   : 1 
+    h_a, h_c                : 0,0 
+    Error Tolerance         : 1e-08 
+
+=============== 
+RUNNING ILFT 
+===============
+Complete : Iterval = 0.00000, net charge = -0.00000, duration (s) = 44.474 
+
+Total Program Time   : 44 seconds 
+Average Time per Run : 44 seconds 
+
+=============== 
+END 
+===============

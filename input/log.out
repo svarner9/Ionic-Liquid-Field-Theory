@@ -1,0 +1,30 @@
+=======================DFT for Electrolyte System======================== 
+
+              Copyright Owners: Chris Balzer (May 2020) 
+========================================================================= 
+
+=============== 
+INITIALIZATION 
+=============== 
+Data read from input file   : cd/input.dat 
+Writing output to directory :  
+    Separation     		  : 0 
+    Ion Bulk Vol Frac	      : 0 
+    Valence  (Pos : Neg)    : 0 : 0 
+    Diameter (Pos : Neg)    : 0 : 0 
+    Iteration type/var      : 0 
+    Starting iter value     : 0 
+    Ending iter value       : 0 
+    Number of steps         : 0 
+    Length Unit             : 0 
+    Grid Sizing             : -0 
+    Temperature (K)         : 0 
+    Dielectric Constant     : 0 
+    Alpha                   : 0 
+    Ell_0                   : 0 
+    h_a, h_c                : 0,0 
+    Error Tolerance         : 0 
+
+=============== 
+RUNNING ILFT 
+===============

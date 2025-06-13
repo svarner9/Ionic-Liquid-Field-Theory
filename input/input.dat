@@ -1,0 +1,44 @@
+*****************************************************************************
+Ionic Liquid Field Theory (ILFT) - INPUT FILE
+=============================================================================
+/* Separation (length unit); grid sizing (length unit)*/
+SIZE:
+10.0; 0.02;
+=============================================================================
+/* Set the bulk density of small ions (volume fraction for both ions)*/
+BULK_DENSITY:
+0.4;
+=============================================================================
+/* Set the surface properties. Surface 1 (e/nm^2 or V); Surface 2 (e/nm^2 or V);
+Type (0 potential / 1 surface charge); Interaction Pos. 1; Interaction Neg. 1
+Interaction Pos. 2; Interaction Neg. 2 */
+SURFACE:
+0; 0; 0; 0.0; 0.0; 0.0; 0.0;
+=============================================================================
+/* Set the valency of salt: Z_pos; Z_neg */
+VALENCY:
+1; -1;
+=============================================================================
+/* Set the diameter (length units): D_pos; D_neg */
+DIAMETER:
+1.0; 1.0;
+=============================================================================
+/* Set the level of theory. No EC (0), 2nd order around bulk (1)*/
+THEORY:
+0;
+=============================================================================
+/* Set the system parameters. Temperature (K), length unit (m), dielectric,
+alpha, ell, h_a, h_c; */
+SYSTEM:
+300.0; 1.0E-9; 10.0; 0.8; 1.0; 0.0; 0.0; 
+=============================================================================
+/* Set the iterative parameters; Maximum Iterations; Error Tolerance; Which
+variable to scan (0:phi, 1:SC, 2:V); Number of steps; Starting value of
+scanned variable; Final value of scanning variable */
+ITERATIVE:
+2E9; 1.0E-8; 2; 0; 0; 0;
+=============================================================================
+/* Set the path of the output file */
+OUT_PATH:
+/home/svarner/RTILSC/ILFT/output/example/
+=======================================================================
