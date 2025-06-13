@@ -26,9 +26,9 @@ The overall grand free energy of the system includes mixing entropy, electrostat
 
 $$
 \begin{aligned}
-     \beta\Omega&={\int}d\textbf{r}[\phi_+\ln{\phi_+}+\phi_-\ln{\phi_-}+(1-\phi_+-\phi_-)\ln{(1-\phi_+-\phi_-)}]\\
-     &+\frac{1}{8\pi\lambda_0^2}{\int}d\textbf{r}{\int}d\textbf{r}\frac{\phi(\textbf{r})\phi(\textbf{r}^\prime )}{|\textbf{r}-\textbf{r}^\prime |}\\
-     &-\frac{\alpha}{8\pi\lambda_0^2}{\int}d\textbf{r}{\int}d\textbf{r}^\prime \frac{\phi(\textbf{r})\textrm{e}^{-\frac{|\textbf{r}-\textbf{r}^\prime |}{\ell_c}}\phi(\textbf{r}^\prime )}{|\textbf{r}-\textbf{r}^\prime |}\\
+     \beta\Omega &=\int d\textbf{r}[\phi_+\ln{\phi_+}+\phi_-\ln{\phi_-}+(1-\phi_+-\phi_-)\ln{(1-\phi_+-\phi_-)}]\\
+     &+\frac{1}{8\pi\lambda_0^2}\int d\textbf{r}\int d\textbf{r}\frac{\phi(\textbf{r})\phi(\textbf{r}^\prime )}{|\textbf{r}-\textbf{r}^\prime |}\\
+     &-\frac{\alpha}{8\pi\lambda_0^2}\int d\textbf{r}\int d\textbf{r}^\prime \frac{\phi(\textbf{r})\textrm{e}^{-\frac{|\textbf{r}-\textbf{r}^\prime |}{\ell_c}}\phi(\textbf{r}^\prime )}{|\textbf{r}-\textbf{r}^\prime |}\\
      &-\int d\textbf{r}_{||} \int dz [H_+(z)\phi_+(\textbf{r})+H_-(z)\phi_-(\textbf{r})]\ \\
      &-\int d\textbf{r} [\mu_+ \phi_+(\textbf{r}) + \mu_- \phi_-(\textbf{r})]
 \end{aligned}
@@ -38,11 +38,11 @@ Since the system only exhibits variation in the direction normal to the parallel
 
 $$
 \begin{aligned}
-     \frac{\beta\Omega}{A}=&\int_{-L/2}^{L/2} dz\, [\phi_+\ln{\phi_+}+\phi_-\ln{\phi_-}+(1-\phi_+-\phi_-)\ln{(1-\phi_+-\phi_-)}]\nonumber\\
-     +&\int_{-L/2}^{L/2} dz{[\phi+\sigma\delta(z+\frac{L}{2})-\sigma\delta(z-\frac{L}{2})]\psi-\frac{\lambda_0^2}{2}|\frac{\partial\psi}{\partial z}|^2}\nonumber\\
-     +&\frac{\alpha}{2\lambda_0^2}\int_{-L/2}^{L/2}dz\int_{-L/2}^{L/2} dz'\, U(z-z')\phi(z)\phi(z')\nonumber\\
-     -&\int_{-L/2}^{L/2} dz\,[H_+\phi_++H_-\phi_-]\nonumber\\
-     -&\int_{-L/2}^{L/2} dz\,[\mu_+\phi_++\mu_-\phi_-]
+     \frac{\beta\Omega}{A} &=\int_{-L/2}^{L/2} dz\, [\phi_+\ln{\phi_+}+\phi_-\ln{\phi_-}+(1-\phi_+-\phi_-)\ln{(1-\phi_+-\phi_-)}]\nonumber\\
+     &+\int_{-L/2}^{L/2} dz{[\phi+\sigma\delta(z+\frac{L}{2})-\sigma\delta(z-\frac{L}{2})]\psi-\frac{\lambda_0^2}{2}|\frac{\partial\psi}{\partial z}|^2}\nonumber\\
+     &+\frac{\alpha}{2\lambda_0^2}\int_{-L/2}^{L/2}dz\int_{-L/2}^{L/2} dz'\, U(z-z')\phi(z)\phi(z')\nonumber\\
+     &-\int_{-L/2}^{L/2} dz\,[H_+\phi_++H_-\phi_-]\nonumber\\
+     &-\int_{-L/2}^{L/2} dz\,[\mu_+\phi_++\mu_-\phi_-]
 \end{aligned}
 $$
 
