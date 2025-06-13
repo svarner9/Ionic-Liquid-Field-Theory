@@ -2,7 +2,7 @@
 
 This code computes the equilibrium density and potential profiles of an ionic liquid between two parallel walls/electrodes. The purpose of this code is determine the capacitance and energy storage capabilities of electric double layer capacitors that utilize ionic liquids as the electrolyte.
 
-A version of this code was used to compute all of the results in a paper that I published on this topic.$^1$ The reference is provided below.
+A version of this code was used to compute all of the results in a paper that I published on this topic.[1] The reference is provided below.
 
 [1] Varner, S.; Wang, Z.-G. Dilution Effects in Ionic Liquid Supercapacitors. *Phys. Chem. Chem. Phys.*, **2022**, 24, 27362-27374. https://doi.org/10.1039/D2CP03398D.
 
