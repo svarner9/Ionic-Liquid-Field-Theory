@@ -22,19 +22,7 @@ A default input file is provided, which will automatically be used if you pass n
 
 ## Equations
 
-The overall grand free energy of the system includes mixing entropy, electrostatic interactions, Yukawa interactions, nonelectrostatic wall interactions, and the chemical potential Legendre transform. The grand free energy is given by:
-
-$$
-\begin{aligned}
-     \beta\Omega &=\int d\textbf{r}[\phi_+\ln{\phi_+}+\phi_-\ln{\phi_-}+(1-\phi_+-\phi_-)\ln{(1-\phi_+-\phi_-)}]\\
-     &+\frac{1}{8\pi\lambda_0^2}\int d\textbf{r}\int d\textbf{r}\frac{\phi(\textbf{r})\phi(\textbf{r}^\prime )}{|\textbf{r}-\textbf{r}^\prime |}\\
-     &-\frac{\alpha}{8\pi\lambda_0^2}\int d\textbf{r}\int d\textbf{r}^\prime \frac{\phi(\textbf{r})\textrm{e}^{-\frac{|\textbf{r}-\textbf{r}^\prime |}{\ell_c}}\phi(\textbf{r}^\prime )}{|\textbf{r}-\textbf{r}^\prime |}\\
-     &-\int d\textbf{r}_{||} \int dz [H_+(z)\phi_+(\textbf{r})+H_-(z)\phi_-(\textbf{r})]\ \\
-     &-\int d\textbf{r} [\mu_+ \phi_+(\textbf{r}) + \mu_- \phi_-(\textbf{r})]
-\end{aligned}
-$$
-
-Since the system only exhibits variation in the direction normal to the parallel plates, we can reduce the equation to a 1-dimensional problem by integrating over the in-plane coordinates. We can also replace the 2nd and 3rd lines using identity transforms typical to statistical field theory and we obtain
+The overall grand free energy of the system includes mixing entropy, electrostatic interactions, Yukawa interactions, nonelectrostatic wall interactions, and the chemical potential Legendre transform. Since the system only exhibits variation in the direction normal to the parallel plates, we can reduce the equation to a 1-dimensional problem by integrating over the in-plane coordinates. The grand free energy per unit area is given by
 
 $$
 \begin{aligned}
@@ -50,8 +38,8 @@ where $U(z-z')=-\frac{\ell_c}{2}\textrm{e}^{-|z-z'|/\ell_c}$. Extremizing this f
 
 $$
 \begin{aligned}
-    &-\lambda_0^2\frac{\partial^2\psi}{\partial z^2}=\phi+\sigma\delta(z+\frac{L}{2})-\sigma\delta(z-\frac{L}{2}),\;\;\;-.\lambda_0^2\frac{\partial\psi}{\partial z}|_{z=\pm L/2}=\sigma\\
-    &\frac{\partial^2Y}{\partial z^2}-\frac{Y}{\ell_c^2}=\frac{\alpha}{\lambda_0^2}\phi(z),\;\;\;.\frac{\partial Y}{\partial z}|_{z=\pm L/2}=\mp\frac{Y(\pm L/2)}{\ell_c}\\
+    &-\lambda_0^2\frac{\partial^2\psi}{\partial z^2}=\phi+\sigma\delta(z+\frac{L}{2})-\sigma\delta(z-\frac{L}{2}),\textrm{ }-\lambda_0^2\frac{\partial\psi}{\partial z}|_{z=\pm L/2}=\sigma\\
+    &\frac{\partial^2Y}{\partial z^2}-\frac{Y}{\ell_c^2}=\frac{\alpha}{\lambda_0^2}\phi(z),\textrm{ }\frac{\partial Y}{\partial z}|_{z=\pm L/2}=\mp\frac{Y(\pm L/2)}{\ell_c}\\
     &\ln(\frac{\phi_+}{1-\phi_+-\phi_+})+\psi+Y-H_+-\mu_+=0\\
     &\ln(\frac{\phi_-}{1-\phi_+-\phi_-})-\psi-Y-H_--\mu_-=0\\
 \end{aligned}
