@@ -25,16 +25,16 @@ A default input file is provided, which will automatically be used if you pass n
 The overall grand free energy of the system includes mixing entropy, electrostatic interactions, Yukawa interactions, nonelectrostatic wall interactions, and the chemical potential Legendre transform. The grand free energy is given by:
 
 $$\begin{aligned}
-     \beta\Omega&={\int}d\textbf{r}\left[\phi_+\ln{\phi_+}+\phi_-\ln{\phi_-}+(1-\phi_+-\phi_-)\ln{(1-\phi_+-\phi_-)}\right]\\
+     \beta\Omega&={\int}d\textbf{r}\left\[\phi_+\ln{\phi_+}+\phi_-\ln{\phi_-}+(1-\phi_+-\phi_-)\ln{(1-\phi_+-\phi_-)}\right\]\\
      &+\frac{1}{8\pi\lambda_0^2}{\int}d\textbf{r}{\int}d\textbf{r}\frac{\phi(\textbf{r})\phi(\textbf{r}^\prime )}{|\textbf{r}-\textbf{r}^\prime |}\\
      &-\frac{\alpha}{8\pi\lambda_0^2}{\int}d\textbf{r}{\int}d\textbf{r}^\prime \frac{\phi(\textbf{r})\textrm{e}^{-\frac{|\textbf{r}-\textbf{r}^\prime |}{\ell_c}}\phi(\textbf{r}^\prime )}{|\textbf{r}-\textbf{r}^\prime |}\\
-     &-\int d\textbf{r}_{||} \int dz \left[H_+(z)\phi_+(\textbf{r})+H_-(z)\phi_-(\textbf{r})\right] \\
-     &-\int d\textbf{r} \left[\mu_+ \phi_+(\textbf{r}) + \mu_- \phi_-(\textbf{r})\right]
+     &-\int d\textbf{r}_{||} \int dz \left\[H_+(z)\phi_+(\textbf{r})+H_-(z)\phi_-(\textbf{r})\right]\ \\
+     &-\int d\textbf{r} \left\[\mu_+ \phi_+(\textbf{r}) + \mu_- \phi_-(\textbf{r})\right\]
 \end{aligned}$$
 
 Since the system only exhibits variation in the direction normal to the parallel plates, we can reduce the equation to a 1-dimensional problem by integrating over the in-plane coordinates. We can also replace the 2nd and 3rd lines using identity transforms typical to statistical field theory and we obtain
 
-$$
+$
 \begin{aligned}
      \frac{\beta\Omega}{A}=&\int_{-L/2}^{L/2} dz\, \left[\phi_+\ln{\phi_+}+\phi_-\ln{\phi_-}+(1-\phi_+-\phi_-)\ln{(1-\phi_+-\phi_-)}\right]\nonumber\\
      +&\int_{-L/2}^{L/2} dz\left\{\left[\phi+\sigma\delta\left(z+\frac{L}{2}\right)-\sigma\delta\left(z-\frac{L}{2}\right)\right]\psi-\frac{\lambda_0^2}{2}\left|\frac{\partial\psi}{\partial z}\right|^2\right\}\nonumber\\
@@ -42,7 +42,7 @@ $$
      -&\int_{-L/2}^{L/2} dz\,\left[H_+\phi_++H_-\phi_-\right]\nonumber\\
      -&\int_{-L/2}^{L/2} dz\,[\mu_+\phi_++\mu_-\phi_-]
 \end{aligned}
-$$
+$
 
 where $U(z-z')=-\frac{\ell_c}{2}\textrm{e}^{-|z-z'|/\ell_c}$. Extremizing this free energy with respect to all of the fluctuating densities and fields gives the saddle-point or mean-field equations.
 
