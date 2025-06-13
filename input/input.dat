@@ -40,5 +40,5 @@ ITERATIVE:
 =============================================================================
 /* Set the path of the output file */
 OUT_PATH:
-/home/svarner/RTILSC/ILFT/output/example/
+../output/example/
 =======================================================================
