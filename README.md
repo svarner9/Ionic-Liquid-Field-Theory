@@ -34,12 +34,12 @@ $$
 \end{aligned}
 $$
 
-where $U(z-z')=-\frac{\ell_c}{2}\textrm{e}^{-|z-z'|/\ell_c}$. Extremizing this free energy with respect to all of the fluctuating densities and fields gives the saddle-point or mean-field equations.
+where $U(z-z')=-\frac{\ell_c}{2}\textrm{e}^{-|z-z'|/\ell_c}$. Extremizing this free energy with respect to all of the fluctuating densities and fields gives the saddle-point or mean-field equations. 
 
 $$
 \begin{aligned}
-    &-\lambda_0^2\frac{\partial^2\psi}{\partial z^2}=\phi+\sigma\delta(z+\frac{L}{2})-\sigma\delta(z-\frac{L}{2}),\textrm{ }-\lambda_0^2\frac{\partial\psi}{\partial z}|_{z=\pm L/2} =\sigma\\
-    &\frac{\partial^2Y}{\partial z^2}-\frac{Y}{\ell_c^2}=\frac{\alpha}{\lambda_0^2}\phi(z),\textrm{ }\frac{\partial Y}{\partial z}|_{z=\pm L/2}=\mp\frac{Y(\pm L/2)}{\ell_c}\\
+    &-\lambda_0^2\frac{\partial^2\psi}{\partial z^2}=\phi+\sigma\delta(z+\frac{L}{2})-\sigma\delta(z-\frac{L}{2}),\textrm{ b.c. }-\lambda_0^2\frac{\partial\psi}{\partial z} =\sigma\\
+    &\frac{\partial^2Y}{\partial z^2}-\frac{Y}{\ell_c^2}=\frac{\alpha}{\lambda_0^2}\phi(z),\textrm{ b.c. } \frac{\partial Y}{\partial z}=\mp\frac{Y}{\ell_c}\\
     &\ln(\frac{\phi_+}{1-\phi_+-\phi_+})+\psi+Y-H_+-\mu_+=0\\
     &\ln(\frac{\phi_-}{1-\phi_+-\phi_-})-\psi-Y-H_--\mu_-=0\\
 \end{aligned}
